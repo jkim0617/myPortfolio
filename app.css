@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", serif;
+    transition: 0.5s;
+}
+
+html {
+    background-color: black;
 }
 
 .roboto-thin {
@@ -50,11 +55,18 @@ header {
     display: flex;
     flex-direction: row;
     width: 50%;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: none;
+    margin: none;
     /* font-size: large; */
 }
 
-#header-menu div {}
+#header-menu div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
 
 @media (min-width: 480px) {
 
@@ -78,19 +90,42 @@ header {
 /* top section */
 
 #top-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+#top-section-circle {
+    background-color: white;
+    height: 750px;
+    width: 750px;
+    border-radius: 50%;
+    position: relative;
+    right: 200px;
+    padding: 100px 100px 100px 250px;
+    display: flex;
+    align-items: center;
+}
+
+#top-section-content {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    top: 70px;
+    /* justify-self: center; */
+    align-items: flex-start;
+    height: 350px;
+    width: 500px;
+    border-radius: 50%;
+    padding: 0;
 }
 
 #logo {
-    width: 350px;
+    width: auto;
     align-items: center;
     margin-top: 2%;
-    padding-left: 5%;
 }
 
 #logo h1 {
@@ -104,7 +139,8 @@ header {
 #description {
     position: relative;
     top: 30px;
-    width: 300px;
+    width: auto;
+    padding-right: 5%;
 }
 
 @media (min-width: 480px) {
@@ -118,11 +154,13 @@ header {
 }
 
 @media (min-width: 768px) {
-    #top-section {
-        position: relative;
-        top: 70px;
-        flex-direction: row;
-        padding: 0 10%;
+    #top-section-circle {
+        right: 100px;
+        padding: 25px 25px 25px 170px;
+    }
+
+    #logo {
+        width: 600px;
     }
 
     #description {
@@ -131,8 +169,20 @@ header {
 }
 
 @media (min-width: 1025px) {
+
+    #top-section {
+        /* justify-content: center; */
+    }
+
+    #top-section-circle {
+        /* width: 900px;
+        height: 900px; */
+        /* padding-left: 150px; */
+        right: -15%;
+    }
+
     #logo {
-        width: 500px;
+        width: 800px;
     }
 
     #description {
