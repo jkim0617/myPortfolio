@@ -141,3 +141,97 @@ header #contact {
     position: relative;
     top: 100px;
 }
+
+@media (min-width: 480px) {
+    #top-section {
+        height: 230px;
+    }
+
+    #top-section-container img {
+        width: 40%;
+        top: 170px;
+    }
+}
+
+@media (min-width: 768px) {
+    #top-section-container img {
+        width: 30%;
+        top: 230px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #top-section-container img {
+        width: 25%;
+        top: 230px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #top-section-container img {
+        width: 20%;
+        top: 230px;
+    }
+}
+
+/* intro sec */
+#intro-container {
+    width: 100%;
+    height: 230px;
+    background-color: #f1f3f1;
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+#intro-container h1 {
+    font-size: 20px;
+}
+
+#intro-container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (min-width: 480px) {
+    #intro-container {
+        top: 200px;
+        padding: 20px 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    #intro-container {
+        top: 300px;
+        padding: 20px 150px;
+    }
+
+    #intro-container h1 {
+        font-size: 30px;
+    }
+
+    #intro-container p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #intro-container {
+        height: 350px;
+        padding: 90px 200px;
+    }
+
+    #intro-container h1 {
+        font-size: 35px;
+    }
+
+    #intro-container p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {}
