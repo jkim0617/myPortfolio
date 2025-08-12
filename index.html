@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <div id="header-image-container">
+        <a href="index.html" id="header-image-container">
             JK
-        </div>
+        </a>
         <div id="contact">Contact</div>
     </header>
     <div id="top-section-container">
@@ -30,30 +30,33 @@
         <img src="Images/robotics_design_white.svg" alt="">
     </div>
     <div id="intro-container">
-        <h1 class="roboto-bold">Hello, I'm Jonathan Kim</h1>
+        <h1 class="roboto-bold">Hello, I'm <span class="intro-highlight">Jonathan Kim</span></h1>
         <p class="roboto-regular">
-            Motivated Computer Engineering student with a strong foundation in embedded systems, hardware design,
+            I am a <span class="intro-highlight">computer engineering student</span> with a strong foundation in
+            <span class="intro-highlight">embedded systems</span>, <span class="intro-highlight">hardware design</span>,
             and
-            software development. Passionate about designing and implementing efficient,
-            reliable, and scalable solutions that bridge hardware and software to create impactful technologies.
+            <span class="intro-highlight">software development</span>. I am passionate about designing and implementing
+            <span class="intro-highlight">efficient</span>,
+            <span class="intro-highlight">reliable</span>, and <span class="intro-highlight">scalable</span> solutions
+            that bridge hardware and software to create <span class="intro-highlight">impactful technologies</span>.
         </p>
     </div>
     <div id="project-container">
-        <h1 id="project-header" class="roboto-bold">Projects</h1>
-        <div id="project-box-container">
-            <div id="slot-card" class="project-box">
-                <img src="Images/slotmachinecard.svg" class="card-image">
-            </div>
-            <div id="attendance-card" class="project-box">
-                <img src="Images/attendancetrackercard.svg" class="card-image">
-            </div>
-            <div id="lfr-card" class="project-box">
-                <img src="Images/linefollowingrobot.svg" alt="" class="card-image">
-            </div>
-            <div id="irrigation-system-card" class="project-box">
-                <img src="Images/irrigationsystemcard.svg" alt="" class="card-image">
-            </div>
+        <div id="project-header" class="roboto-bold">
+            <h2>Projects</h2>
         </div>
+        <a href="slotmachinepage.html" id="slot-card" class="project-box">
+            <h2 class="project-name">Slot Machine</h2>
+        </a>
+        <a href="attendancepage.html" id="attendance-card" class="project-box">
+            <h2 class="project-name">Attendance Tracker</h2>
+        </a>
+        <a href="lfrpage.html" id="lfr-card" class="project-box">
+            <h2 class="project-name">Line Following Robot</h2>
+        </a>
+        <a href="irrigationpage.html" id="irrigation-system-card" class="project-box">
+            <h2 class="project-name">Auto Irrigation System</h2>
+        </a>
     </div>
     <script src="app.js"></script>
 </body>

@@ -1,0 +1,38 @@
+/* 
+    colors
+    dark: #2b2d42
+    medium: #8d99ae
+    light #edf2f4
+    light turq #83c5be
+    yellowish white: #fcf6ea
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  transition: 0.5s;
+}
+
+html {
+  background-color: #2b2d42;
+}
+
+.roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
