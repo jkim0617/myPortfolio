@@ -41,8 +41,8 @@
 //   })
 // }
 
-const projectBox = document.getElementsByClassName("project-box")
-const projectName = document.getElementsByClassName("project-name")
+// const projectBox = document.getElementsByClassName("project-box")
+// const projectName = document.getElementsByClassName("project-name")
 
 // for (let i = 0; i < projectBox.length; i++) {
 //   projectBox[i].addEventListener('mouseenter', () => {
@@ -55,3 +55,15 @@ const projectName = document.getElementsByClassName("project-name")
 //   })
 // }
 
+const projectSkills = document.getElementsByClassName("project-skills");
+const projectBox = document.getElementsByClassName("project-box");
+
+for (let i = 0; i < projectBox.length; i++) {
+  projectBox[i].addEventListener('mouseenter', () => {
+    // setTimeout(() => { projectSkills[i].style.display = "inline" }, 100)
+    projectSkills[i].style.opacity = "1";
+  })
+  projectBox[i].addEventListener('mouseleave', () => {
+    projectSkills[i].style.opacity = "0";
+  })
+}

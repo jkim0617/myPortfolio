@@ -295,6 +295,11 @@ header #contact {
     font-size: 90%;
 }
 
+.skills-list p:hover {
+    font-size: 120%;
+    font-weight: bold;
+}
+
 @media (min-width:768px) {
     #skills-container {
         top: 300px;
@@ -352,6 +357,12 @@ header #contact {
     text-decoration: none;
 }
 
+.project-box {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+}
+
 .project-box:hover {
     background: #8d99ae;
     padding: 0 3%;
@@ -361,6 +372,14 @@ header #contact {
     color: #fcf6ea;
     font-size: 20px;
     font-weight: 600;
+}
+
+.project-skills {
+    color: #fcf6ea;
+    text-align: end;
+    opacity: 0;
+    font-weight: bold;
+    font-style: italic;
 }
 
 #project-header {
